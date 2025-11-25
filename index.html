@@ -3,153 +3,134 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Cartilha digital sobre saúde e bem-estar: prevenção, hábitos saudáveis e informações práticas." />
-  <title>Saúde e Bem-estar – Cartilha Digital</title>
+  <meta name="description" content="Cartilha digital sobre saúde e bem-estar: prevenção, tratamentos, atividade física, vacinas e relatos de recuperação." />
+  <title>Saúde e Bem‑Estar – Cartilha Completa</title>
 
-  <!-- Open Graph / Social -->
-  <meta property="og:title" content="Saúde e Bem-estar – Cartilha Digital" />
-  <meta property="og:description" content="Guia prático com informações sobre prevenção, hábitos saudáveis e autocuidado." />
+  <meta property="og:title" content="Saúde e Bem‑Estar – Cartilha Completa" />
+  <meta property="og:description" content="Guia prático com orientações sobre prevenção, tratamentos, atividade física, vacinas e casos de melhora." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://igormtrabalho-code.github.io/super-duper-robot" />
   <meta property="og:image" content="https://igormtrabalho-code.github.io/super-duper-robot/images/og-image.jpg" />
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Saúde e Bem-estar – Cartilha Digital" />
-  <meta name="twitter:description" content="Guia prático com informações sobre prevenção e hábitos saudáveis." />
-
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
   <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
 
   <header class="site-header" role="banner">
     <div class="container header-inner">
-      <h1 class="brand">Saúde & Bem‑Estar</h1>
+      <h1 class="brand"><a href="/">Saúde & Bem‑Estar</a></h1>
 
       <nav class="main-nav" aria-label="Navegação principal">
         <ul>
-          <li><a href="#introducao">Introdução</a></li>
-          <li><a href="#doencas">Doenças</a></li>
-          <li><a href="#galeria">Galeria</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="#contato">Contato</a></li>
+          <li><a href="/">Início</a></li>
+          <li><a href="/pages/atividade.html">Atividade Física</a></li>
+          <li><a href="/pages/casos.html">Casos de Sucesso</a></li>
+          <li><a href="#vacinas">Vacinas</a></li>
+          <li><a href="/pages/contato.html">Enviar Relato</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main id="main-content" class="container" tabindex="-1">
-    <!-- Hero -->
-    <section class="hero" aria-labelledby="hero-title">
+    <section class="hero card" aria-labelledby="hero-title">
       <div class="hero-inner">
         <div class="hero-text">
           <h2 id="hero-title">Cartilha Digital sobre Saúde e Bem‑Estar</h2>
-          <p class="lead">Dicas práticas de prevenção, hábitos saudáveis e orientações para melhorar a qualidade de vida.</p>
+          <p class="lead">Prevenção, tratamentos, exercício físico e relatos reais de melhora — informações práticas para apoiar decisões de saúde.</p>
+          <p><a class="btn" href="/pages/atividade.html">Guia de Atividade Física</a> <a class="btn ghost" href="/pages/casos.html">Ver Casos Reais</a></p>
         </div>
 
-        <!-- imagem responsiva: webp + fallback jpg. Substitua os arquivos em /images -->
         <figure class="hero-figure" aria-hidden="true">
-          <picture>
-            <source srcset="images/hero-1200.webp 1200w, images/hero-800.webp 800w" type="image/webp">
-            <source srcset="images/hero-1200.jpg 1200w, images/hero-800.jpg 800w" type="image/jpeg">
-            <img src="images/hero-800.jpg" alt="Pessoas caminhando ao ar livre, símbolo de saúde" loading="lazy" width="800" height="400">
-          </picture>
+          <img src="/images/hero-800.jpg" alt="Pessoas caminhando ao ar livre, símbolo de saúde" loading="lazy" width="800" height="400">
           <figcaption class="sr-only">Caminhada ao ar livre como prática de saúde</figcaption>
         </figure>
       </div>
     </section>
 
-    <!-- Sumário / Conteúdo ampliado -->
-    <section id="introducao" aria-labelledby="sumario" class="card">
-      <h2 id="sumario">Sumário</h2>
+    <section id="introducao" class="card">
+      <h2>O que você encontra aqui</h2>
+      <p>Conteúdos práticos e organizados para ajudar na prevenção e no tratamento de condições comuns, além de orientar sobre atividade física segura e apresentar relatos reais (anônimos) de quem melhorou sua saúde.</p>
       <ul>
-        <li>Introdução</li>
-        <li>Justificativa</li>
-        <li>Objetivos</li>
-        <li>Principais Doenças e Como Prevenir</li>
-        <li>Dicas de Hábitos Saudáveis</li>
-        <li>Importância da Prevenção</li>
-        <li>Referências/Fonte de Consulta</li>
+        <li>Doenças mais frequentes: sintomas, prevenção e tratamento básico.</li>
+        <li>Planos de treino e segurança para Academia e CrossFit.</li>
+        <li>Protocolos de reabilitação leve (ex.: pós‑COVID, recondicionamento cardiorrespiratório).</li>
+        <li>Casos de sucesso com resultados e aprendizados.</li>
+        <li>Formulário para você enviar seu próprio relato.</li>
       </ul>
-
-      <h3 id="introducao">Introdução</h3>
-      <p>Conhecer as principais doenças e formas de prevenção ajuda a reduzir riscos e a melhorar a qualidade de vida. Esta cartilha traz orientações práticas, baseadas em fontes confiáveis.</p>
     </section>
 
-    <section id="doencas" aria-labelledby="doencas-title" class="card">
-      <h2 id="doencas-title">Principais Doenças e Como Prevenir</h2>
+    <section id="doencas" class="card">
+      <h2>Doenças, Tratamentos e Recomendações Rápidas</h2>
 
       <article>
         <h3>Doenças Respiratórias</h3>
-        <p>Gripe e COVID‑19: vacinação, higiene das mãos e evitar aglomerações quando doentes.</p>
+        <p>Sintomas iniciais comuns: tosse, congestão, febre e cansaço. Em casos graves: falta de ar, dor torácica ou confusão — procure emergência.</p>
+        <h4>Prevenção</h4>
+        <p>Vacinação, higiene das mãos, ventilação de ambientes e evitar contato próximo quando sintomático.</p>
+        <h4>Tratamento em casa (leve a moderado)</h4>
+        <ul>
+          <li>Repouso e hidratação; antipiréticos se febre desconfortável.</li>
+          <li>Controle de sintomas respiratórios com vaporização e fisioterapia respiratória quando indicada.</li>
+          <li>Procure atenção se há piora: saturação baixa, falta de ar ou dor persistente.</li>
+        </ul>
       </article>
 
       <article>
-        <h3>Doenças Transmitidas por Mosquitos</h3>
-        <p>Dengue e Zika: evitar água parada, uso de repelente e telas nas janelas.</p>
-      </article>
-
-      <article>
-        <h3>Doenças Crônicas</h3>
-        <p>Diabetes e hipertensão: dieta equilibrada, atividade física e acompanhamento médico.</p>
+        <h3>Doenças Crônicas: Diabetes e Hipertensão</h3>
+        <p>Ambas exigem monitorização e adesão ao tratamento. O pilar do controle inclui medicação, dieta e exercício.</p>
+        <h4>Estratégias práticas</h4>
+        <ul>
+          <li>Monitore glicemia e pressão conforme orientação; mantenha um diário para discutir com seu médico.</li>
+          <li>Planeje refeições com baixo índice glicêmico e redução de sódio.</li>
+          <li>Inclua atividade física regular (30–60 min/dia moderada) e programas de fortalecimento 2x/semana.</li>
+        </ul>
       </article>
 
       <article>
         <h3>Saúde Mental</h3>
-        <p>Procure apoio profissional quando necessário; hábitos de sono, contato social e atividades prazerosas ajudam a manter o equilíbrio.</p>
+        <p>Avalie sono, humor e funcionamento diário. Procure ajuda profissional quando sintomas persistirem. Estratégias complementares incluem atividade física regular, técnicas de relaxamento e apoio social.</p>
       </article>
     </section>
 
-    <!-- Galeria de imagens (exemplo) -->
-    <section id="galeria" aria-labelledby="galeria-title" class="card">
-      <h2 id="galeria-title">Galeria</h2>
-      <p>Imagens ilustrativas sobre hábitos saudáveis.</p>
-
-      <div class="gallery">
-        <figure>
-          <img src="images/gallery-1.jpg" srcset="images/gallery-1-small.jpg 400w, images/gallery-1.jpg 800w" sizes="(max-width:600px) 100vw, 33vw" alt="Pessoa praticando caminhada" loading="lazy">
-          <figcaption>Caminhada diária</figcaption>
-        </figure>
-
-        <figure>
-          <img src="images/gallery-2.jpg" alt="Pratos com alimentos saudáveis" loading="lazy">
-          <figcaption>Alimentação equilibrada</figcaption>
-        </figure>
-
-        <figure>
-          <img src="images/gallery-3.jpg" alt="Pessoa fazendo alongamento" loading="lazy">
-          <figcaption>Alongamento matinal</figcaption>
-        </figure>
-      </div>
+    <section id="atividade-intro" class="card">
+      <h2>Atividade Física (resumo)</h2>
+      <p>Para ver o guia completo com planos, exemplos práticos e protocolos de progressão clique em "Atividade Física" no menu.</p>
+      <p><a class="btn" href="/pages/atividade.html">Ir para Guia Completo de Atividade Física</a></p>
     </section>
 
-    <!-- FAQ -->
-    <section id="faq" aria-labelledby="faq-title" class="card">
-      <h2 id="faq-title">Perguntas Frequentes</h2>
-      <dl>
-        <dt>Como aumentar minha atividade física diária?</dt>
-        <dd>Comece com caminhadas curtas, use as escadas, e adicione exercícios leves 3x por semana.</dd>
-
-        <dt>Preciso tomar vitaminas?</dt>
-        <dd>Consulte um profissional de saúde; em geral, uma dieta balanceada supre as necessidades de vitaminas.</dd>
-      </dl>
+    <section id="casos-resumo" class="card">
+      <h2>Casos de Sucesso (resumo)</h2>
+      <p>Histórias reais mostram que intervenções simples e consistentes trazem resultado. Leia relatos completos na página de casos.</p>
+      <p><a class="btn" href="/pages/casos.html">Ver Casos Completos</a></p>
     </section>
 
-    <!-- Contato / Download -->
-    <section id="contato" aria-labelledby="contato-title" class="card">
-      <h2 id="contato-title">Contato e Recursos</h2>
-      <p>Para sugestões ou material adicional, envie um e-mail para <a href="mailto:igor.m.trabalho@gmail.com">igor.m.trabalho@gmail.com</a>.</p>
+    <section id="vacinas" class="card">
+      <h2>Vacinas: por que e quando</h2>
+      <p>Vacinas reduzem risco de doenças graves. Siga o calendário do seu país e discuta doses e reforços com seu médico. Vacinas importantes: Influenza, COVID‑19 (segundo diretriz vigente), Hepatites, Tétano e HPV.</p>
+    </section>
 
-      <p>Baixe a versão em PDF da cartilha (exemplo): <a href="assets/cartilha.pdf" download>Download do PDF</a></p>
+    <section id="recursos" class="card">
+      <h2>Recursos e Referências</h2>
+      <ul>
+        <li>Ministério da Saúde</li>
+        <li>Organização Mundial da Saúde (OMS)</li>
+        <li>Sociedades médicas e associações de educação física</li>
+      </ul>
+    </section>
+
+    <section id="contato" class="card">
+      <h2>Envie seu relato</h2>
+      <p>Quer compartilhar uma história de melhora? <a href="/pages/contato.html">Envie aqui</a> — podemos publicar relatos anônimos com sua autorização.</p>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
       <p>Cartilha digital – Projeto de Extensão ADS | 2025</p>
-      <p><small>Este site é público e serve apenas para fins informativos. Consulte profissionais de saúde para orientações específicas.</small></p>
+      <p><small>Imagens de exemplo: Unsplash. Conteúdo informativo — procure profissionais para orientações individuais.</small></p>
     </div>
   </footer>
 </body>

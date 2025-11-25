@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Enviar Relato</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <meta name="description" content="Envie seu relato de melhora na saúde. Formulário com envio por Formspree (substituir endpoint) e fallback por e‑mail." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="brand"><a href="/">Saúde & Bem‑Estar</a></h1>
+      <nav class="main-nav" aria-label="Navegação">
+        <ul>
+          <li><a href="/">Início</a></li>
+          <li><a href="/pages/atividade.html">Atividade Física</a></li>
+          <li><a href="/pages/casos.html">Casos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Enviar Relato (anônimo)</h2>
+      <p>Compartilhe sua experiência — os relatos podem ser editados para preservar anonimato. Você pode incluir detalhes sobre diagnóstico, intervenções e resultados.</p>
+
+      <form id="relatoForm" class="form" method="POST" action="https://formspree.io/f/YOUR_FORMSPREE_ID">
+        <label for="nome">Nome (opcional)</label>
+        <input id="nome" name="nome" type="text" placeholder="Ex.: João (opcional)">
+
+        <label for="email">E‑mail (opcional — para contato)</label>
+        <input id="email" name="email" type="email" placeholder="seu@email.com">
+
+        <label for="relato">Relato (conte em detalhes)</label>
+        <textarea id="relato" name="relato" rows="8" required placeholder="Descreva a intervenção, tempo, resultados..."></textarea>
+
+        <label for="consent">
+          <input id="consent" name="consent" type="checkbox" required>
+          Autorizo a publicação de um resumo anônimo do meu relato.
+        </label>
+
+        <p class="muted">OBS: Se não configurar um endpoint Formspree, o formulário tentará abrir seu e‑mail (fallback).</p>
+
+        <div class="form-actions">
+          <button type="submit" class="btn">Enviar relato</button>
+          <button type="button" id="mailtoFallback" class="btn ghost">Enviar por e‑mail</button>
+        </div>
+
+        <div id="formStatus" role="status" aria-live="polite" class="sr-only"></div>
+      </form>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p><a href="/">Voltar ao início</a></p>
+    </div>
+  </footer>
+
+  <script src="/js/contact.js"></script>
+</body>
+</html>
