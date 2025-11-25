@@ -1,27 +1,68 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Cartilha digital sobre saúde e bem-estar: prevenção, hábitos saudáveis e informações práticas para melhorar a qualidade de vida.">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Cartilha digital sobre saúde e bem-estar: prevenção, hábitos saudáveis e informações práticas." />
   <title>Saúde e Bem-estar – Cartilha Digital</title>
 
-  <!-- Google Fonts (Open Sans) -->
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Saúde e Bem-estar – Cartilha Digital" />
+  <meta property="og:description" content="Guia prático com informações sobre prevenção, hábitos saudáveis e autocuidado." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://igormtrabalho-code.github.io/super-duper-robot" />
+  <meta property="og:image" content="https://igormtrabalho-code.github.io/super-duper-robot/images/og-image.jpg" />
 
-  <!-- Estilos -->
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Saúde e Bem-estar – Cartilha Digital" />
+  <meta name="twitter:description" content="Guia prático com informações sobre prevenção e hábitos saudáveis." />
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
 
-  <header>
-    <h1>Saúde e Bem-estar</h1>
-    <p class="destaque">Um guia prático para promover prevenção, qualidade de vida e hábitos saudáveis.</p>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <h1 class="brand">Saúde & Bem‑Estar</h1>
+
+      <nav class="main-nav" aria-label="Navegação principal">
+        <ul>
+          <li><a href="#introducao">Introdução</a></li>
+          <li><a href="#doencas">Doenças</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main id="main-content" tabindex="-1">
-    <section aria-labelledby="sumario">
+  <main id="main-content" class="container" tabindex="-1">
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <h2 id="hero-title">Cartilha Digital sobre Saúde e Bem‑Estar</h2>
+          <p class="lead">Dicas práticas de prevenção, hábitos saudáveis e orientações para melhorar a qualidade de vida.</p>
+        </div>
+
+        <!-- imagem responsiva: webp + fallback jpg. Substitua os arquivos em /images -->
+        <figure class="hero-figure" aria-hidden="true">
+          <picture>
+            <source srcset="images/hero-1200.webp 1200w, images/hero-800.webp 800w" type="image/webp">
+            <source srcset="images/hero-1200.jpg 1200w, images/hero-800.jpg 800w" type="image/jpeg">
+            <img src="images/hero-800.jpg" alt="Pessoas caminhando ao ar livre, símbolo de saúde" loading="lazy" width="800" height="400">
+          </picture>
+          <figcaption class="sr-only">Caminhada ao ar livre como prática de saúde</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Sumário / Conteúdo ampliado -->
+    <section id="introducao" aria-labelledby="sumario" class="card">
       <h2 id="sumario">Sumário</h2>
       <ul>
         <li>Introdução</li>
@@ -32,72 +73,84 @@
         <li>Importância da Prevenção</li>
         <li>Referências/Fonte de Consulta</li>
       </ul>
+
+      <h3 id="introducao">Introdução</h3>
+      <p>Conhecer as principais doenças e formas de prevenção ajuda a reduzir riscos e a melhorar a qualidade de vida. Esta cartilha traz orientações práticas, baseadas em fontes confiáveis.</p>
     </section>
 
-    <section aria-labelledby="introducao">
-      <h2 id="introducao">Introdução</h2>
-      <p>A saúde é um dos pilares fundamentais para o bem-estar de toda a sociedade. Conhecer as principais doenças e as formas de prevenção é essencial para promover qualidade de vida. Nesta cartilha digital, você encontra informações práticas, dicas e orientações selecionadas para estimular hábitos saudáveis e melhorar o autocuidado no dia a dia.</p>
+    <section id="doencas" aria-labelledby="doencas-title" class="card">
+      <h2 id="doencas-title">Principais Doenças e Como Prevenir</h2>
+
+      <article>
+        <h3>Doenças Respiratórias</h3>
+        <p>Gripe e COVID‑19: vacinação, higiene das mãos e evitar aglomerações quando doentes.</p>
+      </article>
+
+      <article>
+        <h3>Doenças Transmitidas por Mosquitos</h3>
+        <p>Dengue e Zika: evitar água parada, uso de repelente e telas nas janelas.</p>
+      </article>
+
+      <article>
+        <h3>Doenças Crônicas</h3>
+        <p>Diabetes e hipertensão: dieta equilibrada, atividade física e acompanhamento médico.</p>
+      </article>
+
+      <article>
+        <h3>Saúde Mental</h3>
+        <p>Procure apoio profissional quando necessário; hábitos de sono, contato social e atividades prazerosas ajudam a manter o equilíbrio.</p>
+      </article>
     </section>
 
-    <section aria-labelledby="justificativa">
-      <h2 id="justificativa">Justificativa</h2>
-      <p>Apesar dos avanços na medicina, muitas doenças poderiam ser evitadas com pequenas atitudes diárias. Esse guia foi desenvolvido para tornar o conhecimento acessível e contribuir para uma comunidade mais saudável e bem informada.</p>
+    <!-- Galeria de imagens (exemplo) -->
+    <section id="galeria" aria-labelledby="galeria-title" class="card">
+      <h2 id="galeria-title">Galeria</h2>
+      <p>Imagens ilustrativas sobre hábitos saudáveis.</p>
+
+      <div class="gallery">
+        <figure>
+          <img src="images/gallery-1.jpg" srcset="images/gallery-1-small.jpg 400w, images/gallery-1.jpg 800w" sizes="(max-width:600px) 100vw, 33vw" alt="Pessoa praticando caminhada" loading="lazy">
+          <figcaption>Caminhada diária</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/gallery-2.jpg" alt="Pratos com alimentos saudáveis" loading="lazy">
+          <figcaption>Alimentação equilibrada</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/gallery-3.jpg" alt="Pessoa fazendo alongamento" loading="lazy">
+          <figcaption>Alongamento matinal</figcaption>
+        </figure>
+      </div>
     </section>
 
-    <section aria-labelledby="objetivos">
-      <h2 id="objetivos">Objetivos</h2>
-      <ul>
-        <li>Promover hábitos de vida saudáveis;</li>
-        <li>Apresentar doenças comuns e formas de prevenção;</li>
-        <li>Incentivar práticas de higiene, alimentação balanceada e atividade física;</li>
-        <li>Apontar fontes confiáveis de informação em saúde.</li>
-      </ul>
+    <!-- FAQ -->
+    <section id="faq" aria-labelledby="faq-title" class="card">
+      <h2 id="faq-title">Perguntas Frequentes</h2>
+      <dl>
+        <dt>Como aumentar minha atividade física diária?</dt>
+        <dd>Comece com caminhadas curtas, use as escadas, e adicione exercícios leves 3x por semana.</dd>
+
+        <dt>Preciso tomar vitaminas?</dt>
+        <dd>Consulte um profissional de saúde; em geral, uma dieta balanceada supre as necessidades de vitaminas.</dd>
+      </dl>
     </section>
 
-    <section aria-labelledby="doencas">
-      <h2 id="doencas">Principais Doenças e Como Prevenir</h2>
-      <h3>Doenças Respiratórias</h3>
-      <p>Como gripes e COVID-19. <strong>Prevenção:</strong> Lavar as mãos, evitar aglomeração, usar máscara quando necessário, manter a vacinação atualizada.</p>
+    <!-- Contato / Download -->
+    <section id="contato" aria-labelledby="contato-title" class="card">
+      <h2 id="contato-title">Contato e Recursos</h2>
+      <p>Para sugestões ou material adicional, envie um e-mail para <a href="mailto:igor.m.trabalho@gmail.com">igor.m.trabalho@gmail.com</a>.</p>
 
-      <h3>Doenças Transmitidas por Mosquitos</h3>
-      <p>Dengue, Zika. <strong>Prevenção:</strong> Não deixar água parada, usar repelente, instalar telas de proteção.</p>
-
-      <h3>Doenças Crônicas</h3>
-      <p>Diabetes, hipertensão. <strong>Prevenção:</strong> Alimentação balanceada, exercícios físicos regulares, evitar excesso de sal e açúcar.</p>
-
-      <h3>Saúde Mental</h3>
-      <p>Buscar apoio quando necessário, reservar momentos de lazer e relaxamento, manter contato social saudável.</p>
-    </section>
-
-    <section aria-labelledby="dicas">
-      <h2 id="dicas">Dicas de Hábitos Saudáveis</h2>
-      <ul>
-        <li>Pratique exercícios regularmente, mesmo atividades leves (caminhada, dança, alongamento);</li>
-        <li>Mantenha uma alimentação variada, dando preferência a frutas, verduras e alimentos frescos;</li>
-        <li>Lave as mãos e cuide da higiene diariamente;</li>
-        <li>Durma bem e respeite seu tempo de descanso;</li>
-        <li>Fique atento ao calendário de vacinação;</li>
-        <li>Beba água suficiente ao longo do dia.</li>
-      </ul>
-    </section>
-
-    <section aria-labelledby="prevencao">
-      <h2 id="prevencao">Importância da Prevenção</h2>
-      <p>A prevenção é o melhor caminho para evitar doenças, reduzir internações e garantir qualidade de vida. Pequenas atitudes podem fazer grande diferença na saúde individual e coletiva.</p>
-    </section>
-
-    <section aria-labelledby="referencias">
-      <h2 id="referencias">Referências/Fonte de Consulta</h2>
-      <ul>
-        <li><a href="https://www.gov.br/saude/pt-br" target="_blank" rel="noopener noreferrer">Ministério da Saúde</a></li>
-        <li><a href="https://www.who.int/pt" target="_blank" rel="noopener noreferrer">Organização Mundial da Saúde (OMS)</a></li>
-        <li><a href="https://bvsms.saude.gov.br/" target="_blank" rel="noopener noreferrer">Biblioteca Virtual em Saúde</a></li>
-      </ul>
+      <p>Baixe a versão em PDF da cartilha (exemplo): <a href="assets/cartilha.pdf" download>Download do PDF</a></p>
     </section>
   </main>
 
-  <footer>
-    <p>Cartilha digital desenvolvida para o Projeto de Extensão - ADS | 2025</p>
+  <footer class="site-footer">
+    <div class="container">
+      <p>Cartilha digital – Projeto de Extensão ADS | 2025</p>
+      <p><small>Este site é público e serve apenas para fins informativos. Consulte profissionais de saúde para orientações específicas.</small></p>
+    </div>
   </footer>
 </body>
 </html>
